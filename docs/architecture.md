@@ -12,6 +12,7 @@ OctoFit Tracker is a three-tier application for a school fitness program. The st
 
 ## Ports and environment rules
 
+
 - MongoDB: `27017`
 - Express API: `8000`
 - Vite frontend: `5173`
