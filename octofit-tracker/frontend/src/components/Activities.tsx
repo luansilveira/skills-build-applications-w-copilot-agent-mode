@@ -8,6 +8,7 @@ export default function Activities() {
   const [activities, setActivities] = useState<Activity[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  
   useEffect(() => {
     let active = true;
     getJson<{ activities: Activity[] }>('/api/activities')
