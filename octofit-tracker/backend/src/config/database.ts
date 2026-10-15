@@ -12,3 +12,4 @@ export async function connectDatabase(uri = mongoUri()) {
 export async function disconnectDatabase() {
   await mongoose.disconnect();
 }
+
