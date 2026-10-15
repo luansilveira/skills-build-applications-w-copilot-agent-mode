@@ -12,6 +12,7 @@ OctoFit Tracker is a three-tier application for a school fitness program. The st
 
 ## Ports and environment rules
 
+
 - MongoDB: `27017`
 - Express API: `8000`
 - Vite frontend: `5173`
@@ -30,13 +31,13 @@ OctoFit Tracker is a three-tier application for a school fitness program. The st
 
 Record your plan here before editing code.
 
-- Presentation tier decision:
-- Logic tier decision:
-- Data tier decision:
-- Activity tracking approach:
-- Team management approach:
-- Leaderboard approach:
-- Workout suggestions approach:
+- Presentation tier decision: React pages use the shared API client and render loading, empty, success, and error states.
+- Logic tier decision: Express routes delegate validation and capability behavior to backend service functions.
+- Data tier decision: Mongoose schemas enforce required fields, while seed upserts preserve unrelated records.
+- Activity tracking approach: Validate user and team IDs and references, then store the activity with points and a timestamp.
+- Team management approach: Validate team details and member IDs, then keep team membership links consistent.
+- Leaderboard approach: Sum activity points per team, sort totals descending, and assign 1-based ranks.
+- Workout suggestions approach: Match the user's goal or recent activity to workouts and explain each recommendation.
 
 ## Test plan
 
